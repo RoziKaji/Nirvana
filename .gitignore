@@ -1,0 +1,40 @@
+# Python Bytecode files
+*.py[cod]
+pycache/
+*.so
+
+# Django specific files
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+db.sqlite3
+
+# Environment files
+.env
+.venv/
+env/
+TT_venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django Migrations
+*/migrations/*
+!*/migrations/init.py
+
+# Media files
+media/
+staticfiles/
+static/
+
+# IDEs and editors
+.vscode/
+*.swp
+*.swo
+*.s
+
+# SQLite database file
+db.sqlite3
