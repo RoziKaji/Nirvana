@@ -1,4 +1,4 @@
-from rest_framework.generics import RetrieveAPIView
+from rest_framework.generics import RetrieveAPIView, CreateAPIView
 from users.serializers import UserSerializer
 from rest_framework.response import Response
 
@@ -9,3 +9,8 @@ class ProfileAPIView(RetrieveAPIView):
         User = request.user
         serializer = UserSerializer(User)
         return Response (serializer.data)
+    
+class CreateUserAPIView(CreateAPIView):
+    pass
+    
+
